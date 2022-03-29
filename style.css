@@ -3,9 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
-a{
-    font-weight: 500;
+p {
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
 }
 .container{
     display: flex;
@@ -13,9 +16,9 @@ a{
     align-items: center;
     max-width: 1440px;
     height: 569px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
-h2{
+h2 {
     margin-top: 120px;
     font-size: 40px;
     font-weight: 500;
@@ -35,20 +38,19 @@ h2{
     margin-left: 104px;
     margin-right: 104px;
 }
-.reviews,.booking,.communication,.support{
+.reviews,.booking,.communication,.Image{
     width: 296px;
     height: 176px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
-.wrapper_img{
+.wrapper>img{
     width: 100px;
-    height: 100px;
+    height:100px;
 }
-.support>img{
+.Image>img{
     width: 75px;
     height: 92px;
 }
