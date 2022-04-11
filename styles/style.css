@@ -34,9 +34,10 @@ h2 {
     text-align: center;
 }
 .container>hr {
+    border:none;
     margin-top: 20px;
     width: 100px;
-    height: 6px;
+    height: 4px;
     background-color: #F5BD41;
 }
 .wrapper {
@@ -47,7 +48,7 @@ h2 {
     margin-left: 104px;
     margin-right: 104px;
 }
-.reviews,.booking,.communication,.Image {
+.reviews,.booking,.communication,.image {
     width: 296px;
     height: 176px;
     display: flex;
@@ -59,7 +60,7 @@ h2 {
     width: 100px;
     height:100px;
 }
-.Image>img {
+.image>img {
     width: 75px;
     height: 92px;
 }
@@ -85,11 +86,12 @@ h2 {
 .list-footer {
     list-style: none;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     color: #ffffff;
     line-height: 2.5;
 }
 .list-footer li:first-child {
+    padding-top: 80px;
     font-weight: 500;
 }
 .about {
@@ -105,7 +107,7 @@ h2 {
     color:#ffffff;
     background-color: #10367c;
     font-size: 14px;
-    padding-top: 64px;
+    padding-top: 44px;
     padding-left: 103px;
     padding-bottom: 50px;
 }
