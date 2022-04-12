@@ -1,16 +1,25 @@
-
+@import url('fonts.css');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul.list li {
+    display: inline-block;
+    width: 24px;
+}
 p {
     padding-top: 50px;
     font-size: 24px;
     font-weight: 400;
 }
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,13 +33,14 @@ h2 {
     font-weight: 500;
     text-align: center;
 }
-.container>hr{
+.container>hr {
+    border:none;
     margin-top: 20px;
     width: 100px;
     height: 4px;
     background-color: #F5BD41;
 }
-.wrapper{
+.wrapper {
     margin-top: 82px;
     display: flex;
     flex-direction: row;
@@ -38,7 +48,7 @@ h2 {
     margin-left: 104px;
     margin-right: 104px;
 }
-.reviews,.booking,.communication,.Image{
+.reviews,.booking,.communication,.image {
     width: 296px;
     height: 176px;
     display: flex;
@@ -46,23 +56,58 @@ h2 {
     justify-content: space-between;
     align-items: center;
 }
-.wrapper>img{
+.wrapper>img {
     width: 100px;
     height:100px;
 }
-.Image>img{
+.image>img {
     width: 75px;
     height: 92px;
 }
-.communication>img{
+.communication>img {
     width: 83px;
     height: 83px;
 }
-.booking>img{
+.booking>img {
     width: 100px;
     height: 67px;
 }
-.reviews>img{
+.reviews>img {
     width: 92px;
     height: 83px;
+}
+.footer-container {
+    width: 1240px;
+    height: 430px;
+    background-color: #10367c;
+    flex-direction: row;
+    display: flex;
+}
+.list-footer {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 2.5;
+}
+.list-footer li:first-child {
+    padding-top: 80px;
+    font-weight: 500;
+}
+.about {
+    padding-left: 90px;
+}
+.property {
+    padding-left: 250px;
+}
+.support {
+    padding-left: 280px;
+}
+.copyright {
+    color:#ffffff;
+    background-color: #10367c;
+    font-size: 14px;
+    padding-top: 44px;
+    padding-left: 103px;
+    padding-bottom: 50px;
 }
