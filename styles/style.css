@@ -5,6 +5,152 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+.main-page {
+    background-image: url("../images/background-main-page.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 135px 0 135px;
+}
+.header-right-content {
+    display: flex;
+    flex-direction: row;
+}
+.nav-content {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+.links {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 20px 0 0;
+    position: relative;
+    cursor: pointer;
+}
+.icons {
+    list-style: none;
+}
+.icon-picture {
+    padding: 0 0 0 20px;
+}
+.links:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #f5bd41;
+    content: "";
+    transition: width 0.3s ease-out;
+    margin-top: 40px;
+}
+.links:hover:after,
+.links:focus:after {
+    width: 83%;
+}
+.main-text {
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-left: 135px;
+    padding-top: 140px;
+}
+.form-checkin {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.labels-container {
+    padding-top: 80px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.label-city {
+    padding: 0 215px 0 165px;
+}
+.input-wrapper {
+    width: 1240px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-checkin-text-city {
+    height: 64px;
+    width: 460px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+}
+.form-checkin-text-city:focus {
+    border: 3px solid #f5bd41;
+    outline: none;
+    cursor: pointer;
+}
+.form-checkin-text-date:focus {
+    border: 3px solid #f5bd41;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+.form-checkin-text-amount:focus {
+    border: 3px solid #f5bd41;
+    outline: none;
+    cursor: pointer;
+}
+.form-checkin-text-date {
+    height: 64px;
+    width: 261px;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+}
+.form-checkin-text-amount {
+    height: 64px;
+    width: 324px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+}
+.button-search-form {
+    width: 195px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: #3077c6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+}
+::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    padding-left: 30px;
+}
+.download-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 90px;
+}
+.google-play,
+.app-store {
+    padding-right: 20px;
+}
 body {
     display: flex;
     flex-direction: column;
