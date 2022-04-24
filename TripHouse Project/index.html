@@ -7,9 +7,106 @@
     <meta name="author" content="Bega Rakhmankulov "/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../styles/style.css"/>
-    <title>lesson 5</title>
+    <title>lesson 6</title>
 </head>
 <body>
+<section class="main-page">
+    <header class="header-content">
+        <a class="header-logo" href="#">
+        <img src="../images/triphouse-logo.png" alt="TripHouse-logo">
+        </a>
+        <nav class="header-right-content">
+            <ul class="nav-content">
+                <li>
+                    <a class="nav-content links" href="#">Stays</a>
+                </li>
+                <li>
+                    <a class="nav-content links" href="#">Attractions</a>
+                </li>
+            </ul>
+            <ul class="nav-content icons">
+                <li>
+                    <img
+                            class="icon-picture night-theme"
+                            src="../images/night-icon.svg"
+                            alt="Night-Theme"
+                    />
+                </li>
+                <li>
+                    <img
+                            class="icon-picture account-icon"
+                            src="../images/account-icon.svg"
+                            alt="Account-icon"
+                    />
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-text">
+        Discover stays <br/>
+        to live, work or just relax
+    </div>
+    <form action="/" method="get">
+        <div class="labels-container">
+            <label for="city-text" class="labels-main-page label-city">
+            Your destination or hotel name</label>
+            <label for="date-checkin" class="labels-main-page label-date">
+            Check-in — Check-out</label>
+            <label for="people-amount" class="labels-main-page"></label>
+        </div>
+        <div class="form-checkin">
+            <div class="input-wrapper">
+                <input
+                        class="form-checkin-text-city"
+                        type="text"
+                        list="cities"
+                        id="city-text"
+                        name="text"
+                        placeholder="New York"
+                />
+                <datalist id="cities">
+                    <option value="Warsaw"></option>
+                    <option value="Los Angeles"></option>
+                    <option value="Moscow"></option>
+                    <option value="Tbilisi"></option>
+                    <option value="Berlin"></option>
+                    <option value="London"></option>
+                </datalist>
+                <input
+                        class="form-checkin-text-date"
+                        type="text"
+                        id="date-checkin"
+                        name="date-checkin"
+                        placeholder="Check-in — Check-out"
+                />
+                <input
+                        class="form-checkin-text-amount"
+                        type="text"
+                        id="people-amount"
+                        name="people-amount"
+                        placeholder="2 Adult — 1 Children — 1 Room"
+                />
+                <button class="button-search-form" type="submit">Search</button>
+            </div>
+        </div>
+    </form>
+    <div class="download-icons">
+        <a href="">
+        <img
+                class="download-icons-image google-play"
+                src="../images/googleplay-icon.svg"
+                alt="Get it from GooglePlay"
+        />
+        </a>
+        <a href="">
+        <img
+                class="download-icons-image app-store"
+                src="../images/appstore-icon.svg"
+                alt="Get it from AppStore"
+        />
+        </a>
+    </div>
+</section>
 <section class="container">
     <h2>What do we offer</h2>
     <hr/>
